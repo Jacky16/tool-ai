@@ -7,7 +7,7 @@ const HomePage = lazy(() => import("./pages/HomePage"));
 
 function App() {
   return (
-    <div className="bg-background min-h-screen py-12 flex flex-col justify-between gap-12 min-h">
+    <div className="bg-background min-h-screen flex flex-col justify-around min-h py-8 gap-8">
       <Header />
       <Routes>
         <Route
