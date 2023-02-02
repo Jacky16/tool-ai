@@ -6,19 +6,4 @@ export const tools: Tool[] = [
     description: "Check if a email is spam with one click",
     link: "spam",
   },
-  {
-    name: "Spam",
-    description: "Check if a email is spam with one click",
-    link: "spam",
-  },
-  {
-    name: "Spam",
-    description: "Check if a email is spam with one click",
-    link: "spam",
-  },
-  {
-    name: "Spam",
-    description: "Check if a email is spam with one click",
-    link: "spam",
-  },
 ];
