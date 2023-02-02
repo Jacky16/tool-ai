@@ -1,11 +1,13 @@
 import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
+import Header from "./components/Header/Header";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
 
 function App() {
   return (
-    <div className="bg-background min-h-screen">
+    <div className="bg-background min-h-screen py-6">
+      <Header />
       <Routes>
         <Route
           path="/"
