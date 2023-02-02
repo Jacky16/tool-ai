@@ -1,0 +1,282 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given a ToolsSection component When it's rendered Then it should match the snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section
+        class="flex flex-col items-center bg-tertiary py-10"
+      >
+        <div
+          class="container mx-auto max-w-6xl flex flex-col p-4"
+        >
+          <div
+            class="flex flex-col gap-4"
+          >
+            <h2
+              class="text-4xl font-semibold text-background"
+            >
+              Tools
+            </h2>
+            <ul
+              class="flex flex-col gap-12 md:flex-row md:grid grid-cols-3"
+            >
+              <li>
+                <article
+                  class="w-full flex flex-col items-center gap-2 bg-primary max-w-sm text-background p-2 border-2 border-background rounded-sm shadow-lg"
+                >
+                  <h3
+                    class="font-bold text-3xl"
+                  >
+                    Spam
+                  </h3>
+                  <p
+                    class="text-center"
+                  >
+                    Check if a email is spam with one click
+                  </p>
+                  <a
+                    class="border-2 border-background rounded-md py-0.5 px-7 font-semibold hover:bg-tertiary"
+                    href="/spam"
+                  >
+                    Try it
+                  </a>
+                </article>
+              </li>
+              <li>
+                <article
+                  class="w-full flex flex-col items-center gap-2 bg-primary max-w-sm text-background p-2 border-2 border-background rounded-sm shadow-lg"
+                >
+                  <h3
+                    class="font-bold text-3xl"
+                  >
+                    Spam
+                  </h3>
+                  <p
+                    class="text-center"
+                  >
+                    Check if a email is spam with one click
+                  </p>
+                  <a
+                    class="border-2 border-background rounded-md py-0.5 px-7 font-semibold hover:bg-tertiary"
+                    href="/spam"
+                  >
+                    Try it
+                  </a>
+                </article>
+              </li>
+              <li>
+                <article
+                  class="w-full flex flex-col items-center gap-2 bg-primary max-w-sm text-background p-2 border-2 border-background rounded-sm shadow-lg"
+                >
+                  <h3
+                    class="font-bold text-3xl"
+                  >
+                    Spam
+                  </h3>
+                  <p
+                    class="text-center"
+                  >
+                    Check if a email is spam with one click
+                  </p>
+                  <a
+                    class="border-2 border-background rounded-md py-0.5 px-7 font-semibold hover:bg-tertiary"
+                    href="/spam"
+                  >
+                    Try it
+                  </a>
+                </article>
+              </li>
+              <li>
+                <article
+                  class="w-full flex flex-col items-center gap-2 bg-primary max-w-sm text-background p-2 border-2 border-background rounded-sm shadow-lg"
+                >
+                  <h3
+                    class="font-bold text-3xl"
+                  >
+                    Spam
+                  </h3>
+                  <p
+                    class="text-center"
+                  >
+                    Check if a email is spam with one click
+                  </p>
+                  <a
+                    class="border-2 border-background rounded-md py-0.5 px-7 font-semibold hover:bg-tertiary"
+                    href="/spam"
+                  >
+                    Try it
+                  </a>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section
+      class="flex flex-col items-center bg-tertiary py-10"
+    >
+      <div
+        class="container mx-auto max-w-6xl flex flex-col p-4"
+      >
+        <div
+          class="flex flex-col gap-4"
+        >
+          <h2
+            class="text-4xl font-semibold text-background"
+          >
+            Tools
+          </h2>
+          <ul
+            class="flex flex-col gap-12 md:flex-row md:grid grid-cols-3"
+          >
+            <li>
+              <article
+                class="w-full flex flex-col items-center gap-2 bg-primary max-w-sm text-background p-2 border-2 border-background rounded-sm shadow-lg"
+              >
+                <h3
+                  class="font-bold text-3xl"
+                >
+                  Spam
+                </h3>
+                <p
+                  class="text-center"
+                >
+                  Check if a email is spam with one click
+                </p>
+                <a
+                  class="border-2 border-background rounded-md py-0.5 px-7 font-semibold hover:bg-tertiary"
+                  href="/spam"
+                >
+                  Try it
+                </a>
+              </article>
+            </li>
+            <li>
+              <article
+                class="w-full flex flex-col items-center gap-2 bg-primary max-w-sm text-background p-2 border-2 border-background rounded-sm shadow-lg"
+              >
+                <h3
+                  class="font-bold text-3xl"
+                >
+                  Spam
+                </h3>
+                <p
+                  class="text-center"
+                >
+                  Check if a email is spam with one click
+                </p>
+                <a
+                  class="border-2 border-background rounded-md py-0.5 px-7 font-semibold hover:bg-tertiary"
+                  href="/spam"
+                >
+                  Try it
+                </a>
+              </article>
+            </li>
+            <li>
+              <article
+                class="w-full flex flex-col items-center gap-2 bg-primary max-w-sm text-background p-2 border-2 border-background rounded-sm shadow-lg"
+              >
+                <h3
+                  class="font-bold text-3xl"
+                >
+                  Spam
+                </h3>
+                <p
+                  class="text-center"
+                >
+                  Check if a email is spam with one click
+                </p>
+                <a
+                  class="border-2 border-background rounded-md py-0.5 px-7 font-semibold hover:bg-tertiary"
+                  href="/spam"
+                >
+                  Try it
+                </a>
+              </article>
+            </li>
+            <li>
+              <article
+                class="w-full flex flex-col items-center gap-2 bg-primary max-w-sm text-background p-2 border-2 border-background rounded-sm shadow-lg"
+              >
+                <h3
+                  class="font-bold text-3xl"
+                >
+                  Spam
+                </h3>
+                <p
+                  class="text-center"
+                >
+                  Check if a email is spam with one click
+                </p>
+                <a
+                  class="border-2 border-background rounded-md py-0.5 px-7 font-semibold hover:bg-tertiary"
+                  href="/spam"
+                >
+                  Try it
+                </a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
