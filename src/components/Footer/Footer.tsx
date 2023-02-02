@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="text-tertiary flex flex-col items-center gap-4">
+    <footer className="text-tertiary flex flex-col items-center gap-4 text-center">
       <span className="first-letter:uppercase">
         This is a submission for{" "}
         <a
