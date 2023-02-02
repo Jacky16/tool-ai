@@ -7,7 +7,7 @@ interface ToolCardListProps {
 
 const ToolCardList = ({ tools }: ToolCardListProps) => {
   return (
-    <ul className="flex flex-col gap-12 md:flex-row md:grid grid-cols-3">
+    <ul className="flex flex-col items-center gap-12 md:flex-row md:grid grid-cols-3">
       {tools.map((tool, index) => (
         <li key={index}>
           <ToolCard tool={tool} />
