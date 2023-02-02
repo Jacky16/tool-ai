@@ -7,21 +7,19 @@ const HomePage = lazy(() => import("./pages/HomePage"));
 function App() {
   return (
     <div className="bg-background min-h-screen py-6">
-      <div className="container mx-auto max-w-7xl">
-        <Header />
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <Suspense fallback={<div>Loading...</div>}>
-                <HomePage />
-              </Suspense>
-            }
-          />
+      <Header />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <HomePage />
+            </Suspense>
+          }
+        />
 
-          <Route path="*" element={<div>404 Not Found</div>} />
-        </Routes>
-      </div>
+        <Route path="*" element={<div>404 Not Found</div>} />
+      </Routes>
     </div>
   );
 }
