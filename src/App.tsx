@@ -6,7 +6,7 @@ import Header from "./components/Header/Header";
 import ToolLayout from "./layout/ToolLayout/ToolLayout";
 import SpamCheckerPage from "./pages/SpamCheckerPage/SpamCheckerPage";
 
-const HomePage = lazy(() => import("./pages/HomePage"));
+const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
 
 function App() {
   return (
