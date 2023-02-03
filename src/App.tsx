@@ -1,13 +1,16 @@
 import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
+import Container from "./components/Container/Container";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import ToolLayout from "./layout/ToolLayout/ToolLayout";
+import SpamCheckerPage from "./pages/SpamCheckerPage/SpamCheckerPage";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
 
 function App() {
   return (
-    <div className="bg-background min-h-screen flex flex-col justify-around min-h py-8 gap-8">
+    <div className="bg-background min-h-screen flex flex-col justify-between min-h py-8 gap-8">
       <Header />
       <Routes>
         <Route
@@ -18,7 +21,16 @@ function App() {
             </Suspense>
           }
         />
-
+        <Route
+          path="/tools/spam-checker"
+          element={
+            <ToolLayout>
+              <Container>
+                <SpamCheckerPage />
+              </Container>
+            </ToolLayout>
+          }
+        />
         <Route path="*" element={<div>404 Not Found</div>} />
       </Routes>
 
