@@ -1,5 +1,5 @@
-import Container from "../components/Container/Container";
-import ToolsSection from "../components/ToolsSection/ToolsSection";
+import Container from "../../components/Container/Container";
+import ToolsSection from "../../components/ToolsSection/ToolsSection";
 
 const HomePage = () => {
   return (
