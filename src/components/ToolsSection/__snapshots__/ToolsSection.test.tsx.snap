@@ -29,7 +29,7 @@ Object {
                   <h3
                     class="font-bold text-3xl"
                   >
-                    Spam
+                    Spam checker
                   </h3>
                   <p
                     class="text-center"
@@ -38,73 +38,7 @@ Object {
                   </p>
                   <a
                     class="border-2 border-background rounded-md py-0.5 px-7 font-semibold hover:bg-tertiary"
-                    href="/spam"
-                  >
-                    Try it
-                  </a>
-                </article>
-              </li>
-              <li>
-                <article
-                  class="w-full flex flex-col items-center gap-2 bg-primary max-w-sm text-background p-2 border-2 border-background rounded-sm shadow-lg"
-                >
-                  <h3
-                    class="font-bold text-3xl"
-                  >
-                    Spam
-                  </h3>
-                  <p
-                    class="text-center"
-                  >
-                    Check if a email is spam with one click
-                  </p>
-                  <a
-                    class="border-2 border-background rounded-md py-0.5 px-7 font-semibold hover:bg-tertiary"
-                    href="/spam"
-                  >
-                    Try it
-                  </a>
-                </article>
-              </li>
-              <li>
-                <article
-                  class="w-full flex flex-col items-center gap-2 bg-primary max-w-sm text-background p-2 border-2 border-background rounded-sm shadow-lg"
-                >
-                  <h3
-                    class="font-bold text-3xl"
-                  >
-                    Spam
-                  </h3>
-                  <p
-                    class="text-center"
-                  >
-                    Check if a email is spam with one click
-                  </p>
-                  <a
-                    class="border-2 border-background rounded-md py-0.5 px-7 font-semibold hover:bg-tertiary"
-                    href="/spam"
-                  >
-                    Try it
-                  </a>
-                </article>
-              </li>
-              <li>
-                <article
-                  class="w-full flex flex-col items-center gap-2 bg-primary max-w-sm text-background p-2 border-2 border-background rounded-sm shadow-lg"
-                >
-                  <h3
-                    class="font-bold text-3xl"
-                  >
-                    Spam
-                  </h3>
-                  <p
-                    class="text-center"
-                  >
-                    Check if a email is spam with one click
-                  </p>
-                  <a
-                    class="border-2 border-background rounded-md py-0.5 px-7 font-semibold hover:bg-tertiary"
-                    href="/spam"
+                    href="/tools/spam-checker"
                   >
                     Try it
                   </a>
@@ -141,7 +75,7 @@ Object {
                 <h3
                   class="font-bold text-3xl"
                 >
-                  Spam
+                  Spam checker
                 </h3>
                 <p
                   class="text-center"
@@ -150,73 +84,7 @@ Object {
                 </p>
                 <a
                   class="border-2 border-background rounded-md py-0.5 px-7 font-semibold hover:bg-tertiary"
-                  href="/spam"
-                >
-                  Try it
-                </a>
-              </article>
-            </li>
-            <li>
-              <article
-                class="w-full flex flex-col items-center gap-2 bg-primary max-w-sm text-background p-2 border-2 border-background rounded-sm shadow-lg"
-              >
-                <h3
-                  class="font-bold text-3xl"
-                >
-                  Spam
-                </h3>
-                <p
-                  class="text-center"
-                >
-                  Check if a email is spam with one click
-                </p>
-                <a
-                  class="border-2 border-background rounded-md py-0.5 px-7 font-semibold hover:bg-tertiary"
-                  href="/spam"
-                >
-                  Try it
-                </a>
-              </article>
-            </li>
-            <li>
-              <article
-                class="w-full flex flex-col items-center gap-2 bg-primary max-w-sm text-background p-2 border-2 border-background rounded-sm shadow-lg"
-              >
-                <h3
-                  class="font-bold text-3xl"
-                >
-                  Spam
-                </h3>
-                <p
-                  class="text-center"
-                >
-                  Check if a email is spam with one click
-                </p>
-                <a
-                  class="border-2 border-background rounded-md py-0.5 px-7 font-semibold hover:bg-tertiary"
-                  href="/spam"
-                >
-                  Try it
-                </a>
-              </article>
-            </li>
-            <li>
-              <article
-                class="w-full flex flex-col items-center gap-2 bg-primary max-w-sm text-background p-2 border-2 border-background rounded-sm shadow-lg"
-              >
-                <h3
-                  class="font-bold text-3xl"
-                >
-                  Spam
-                </h3>
-                <p
-                  class="text-center"
-                >
-                  Check if a email is spam with one click
-                </p>
-                <a
-                  class="border-2 border-background rounded-md py-0.5 px-7 font-semibold hover:bg-tertiary"
-                  href="/spam"
+                  href="/tools/spam-checker"
                 >
                   Try it
                 </a>

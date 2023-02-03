@@ -2,23 +2,8 @@ import { Tool } from "../types/types";
 
 export const tools: Tool[] = [
   {
-    name: "Spam",
+    name: "Spam checker",
     description: "Check if a email is spam with one click",
-    link: "spam",
-  },
-  {
-    name: "Spam",
-    description: "Check if a email is spam with one click",
-    link: "spam",
-  },
-  {
-    name: "Spam",
-    description: "Check if a email is spam with one click",
-    link: "spam",
-  },
-  {
-    name: "Spam",
-    description: "Check if a email is spam with one click",
-    link: "spam",
+    link: "tools/spam-checker",
   },
 ];
