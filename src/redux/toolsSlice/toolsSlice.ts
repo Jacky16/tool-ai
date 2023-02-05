@@ -1,22 +1,28 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { ToolsState } from "../types/types";
+import { EmailSpamCheckerPayload, ToolsState } from "../types/types";
 
 const initialState: ToolsState = {
-  spamPercentage: 0,
+  emailSpamChecker: {
+    prediction: "",
+    confidence: 0,
+  },
 };
 
 export const toolsSlice = createSlice({
   name: "tools",
   initialState,
   reducers: {
-    loadSpamPercentage: (currentState, action: PayloadAction<number>) => ({
+    loadSpamChecker: (
+      currentState,
+      action: PayloadAction<EmailSpamCheckerPayload>
+    ) => ({
       ...currentState,
-      spamPercentage: action.payload,
+      emailSpamChecker: action.payload,
     }),
   },
 });
 
 export const toolsReducer = toolsSlice.reducer;
 
-export const { loadSpamPercentage: loadSpamPercentageActionCreator } =
+export const { loadSpamChecker: loadSpamCheckerActionCreator } =
   toolsSlice.actions;

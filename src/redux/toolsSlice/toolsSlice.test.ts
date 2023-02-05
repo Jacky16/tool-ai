@@ -1,14 +1,27 @@
 import { ToolsState } from "../types/types";
-import { loadSpamPercentageActionCreator, toolsReducer } from "./toolsSlice";
+import { toolsReducer, loadSpamCheckerActionCreator } from "./toolsSlice";
 
 describe("Given the toolsSlice", () => {
-  describe("When the setSpamPercentage action is dispatched", () => {
-    test("Then the spamPercentage should be set to the payload", () => {
-      const initialState: ToolsState = { spamPercentage: 0 };
+  describe("When receives a loadSpamChecker action", () => {
+    test("Then it should return the new state with percentage '99' and prediction 'spam'", () => {
+      const initialState: ToolsState = {
+        emailSpamChecker: {
+          prediction: "",
+          confidence: 0,
+        },
+      };
 
-      const expectedState: ToolsState = { spamPercentage: 50 };
+      const action = loadSpamCheckerActionCreator({
+        confidence: 99,
+        prediction: "spam",
+      });
 
-      const action = loadSpamPercentageActionCreator(50);
+      const expectedState: ToolsState = {
+        emailSpamChecker: {
+          prediction: "spam",
+          confidence: 99,
+        },
+      };
 
       const newState = toolsReducer(initialState, action);
 
