@@ -9,7 +9,6 @@ const toolFactory = Factory.define<Tool>(() => ({
 }));
 
 const questionWithoutAnswerFactory = Factory.define<Question>(() => ({
-  id: faker.datatype.uuid(),
   question: faker.lorem.sentence(),
 }));
 
