@@ -37,7 +37,6 @@ const useApi = () => {
     const { confidence } = emailClassification;
 
     dispatch(loadSpamPercentageActionCreator(confidence));
-    dispatch(loadSpamPercentageActionCreator);
 
     dispatch(setIsLoadingActionCreator(false));
   };
