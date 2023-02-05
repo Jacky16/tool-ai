@@ -20,7 +20,7 @@ Object {
               Tools
             </h2>
             <ul
-              class="flex flex-col items-center gap-12 md:flex-row md:grid grid-cols-3"
+              class="flex flex-col gap-12 md:flex-row md:grid grid-cols-3"
             >
               <li>
                 <article
@@ -39,6 +39,28 @@ Object {
                   <a
                     class="border-2 border-background rounded-md py-0.5 px-7 font-semibold hover:bg-tertiary"
                     href="/tools/spam-checker"
+                  >
+                    Try it
+                  </a>
+                </article>
+              </li>
+              <li>
+                <article
+                  class="w-full flex flex-col items-center gap-2 bg-primary max-w-sm text-background p-2 border-2 border-background rounded-sm shadow-lg"
+                >
+                  <h3
+                    class="font-bold text-3xl"
+                  >
+                    Language questions
+                  </h3>
+                  <p
+                    class="text-center"
+                  >
+                    Generate questions about your programming language
+                  </p>
+                  <a
+                    class="border-2 border-background rounded-md py-0.5 px-7 font-semibold hover:bg-tertiary"
+                    href="/tools/language-questions"
                   >
                     Try it
                   </a>
@@ -66,7 +88,7 @@ Object {
             Tools
           </h2>
           <ul
-            class="flex flex-col items-center gap-12 md:flex-row md:grid grid-cols-3"
+            class="flex flex-col gap-12 md:flex-row md:grid grid-cols-3"
           >
             <li>
               <article
@@ -85,6 +107,28 @@ Object {
                 <a
                   class="border-2 border-background rounded-md py-0.5 px-7 font-semibold hover:bg-tertiary"
                   href="/tools/spam-checker"
+                >
+                  Try it
+                </a>
+              </article>
+            </li>
+            <li>
+              <article
+                class="w-full flex flex-col items-center gap-2 bg-primary max-w-sm text-background p-2 border-2 border-background rounded-sm shadow-lg"
+              >
+                <h3
+                  class="font-bold text-3xl"
+                >
+                  Language questions
+                </h3>
+                <p
+                  class="text-center"
+                >
+                  Generate questions about your programming language
+                </p>
+                <a
+                  class="border-2 border-background rounded-md py-0.5 px-7 font-semibold hover:bg-tertiary"
+                  href="/tools/language-questions"
                 >
                   Try it
                 </a>
