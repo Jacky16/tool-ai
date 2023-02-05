@@ -27,20 +27,19 @@ export const toolsSlice = createSlice({
     }),
 
     loadAnswer: (currentState, action: PayloadAction<Question>) => {
-      const { questions } = currentState;
-      const idQuestion = action.payload.id;
+      const { question: questionText } = action.payload;
 
-      const previousQuestions = [...questions];
-
-      const index = previousQuestions.findIndex(
-        (question) => question.id === idQuestion
+      const indexQuestionWithoutAnswer = currentState.questions.findIndex(
+        (question) => question.question === questionText
       );
 
-      previousQuestions[index] = { ...action.payload };
+      const newQuestionsState = [...currentState.questions];
+
+      newQuestionsState[indexQuestionWithoutAnswer] = action.payload;
 
       return {
         ...currentState,
-        questions: [...previousQuestions],
+        questions: newQuestionsState,
       };
     },
   },
