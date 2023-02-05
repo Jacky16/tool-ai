@@ -31,6 +31,16 @@ function App() {
             </ToolLayout>
           }
         />
+        <Route
+          path="/tools/language-questions"
+          element={
+            <ToolLayout>
+              <Container>
+                <div>Language Questions</div>
+              </Container>
+            </ToolLayout>
+          }
+        />
         <Route path="*" element={<div>404 Not Found</div>} />
       </Routes>
 
