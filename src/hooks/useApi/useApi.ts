@@ -1,10 +1,18 @@
 import { useDispatch } from "react-redux";
 import emailExamples from "../../data/emailExamples";
 import environment from "../../environment";
-import { loadSpamCheckerActionCreator } from "../../redux/toolsSlice/toolsSlice";
+import {
+  loadQuestionsActionCreator,
+  loadSpamCheckerActionCreator,
+} from "../../redux/toolsSlice/toolsSlice";
 import { setIsLoadingActionCreator } from "../../redux/uiSlice/uiSlice";
 import apiEndpoints from "../../routes/apiEndpoints";
-import { EmailClassificationDataResponse } from "../../types/types";
+import splitQuestions from "../../utils/splitQuestions/splitQuestions";
+import {
+  EmailClassificationDataResponse,
+  OptionsTextGenerator,
+  TextGeneratorDataResponse,
+} from "../types/types";
 
 const useApi = () => {
   const { apiBearer } = environment;
@@ -46,8 +54,40 @@ const useApi = () => {
     dispatch(setIsLoadingActionCreator(false));
   };
 
+  const generateText = async (preset: OptionsTextGenerator, prompt: string) => {
+    dispatch(setIsLoadingActionCreator(true));
+
+    const response = await fetch(apiEndpoints.generate, {
+      method: "POST",
+      headers: {
+        accept: "application/json",
+        "content-type": "application/json",
+        authorization: `BEARER ${apiBearer}`,
+      },
+      body: JSON.stringify({
+        prompt,
+        max_tokens: preset.maxTokens,
+        model: preset.model,
+        temperature: preset.temperature,
+        k: preset.k,
+        p: preset.p,
+        frequency_penalty: preset.frequencyPenalty,
+        presence_penalty: preset.presencePenalty,
+      }),
+    });
+
+    const data = (await response.json()) as TextGeneratorDataResponse;
+
+    const [generatedText] = data.generations;
+
+    dispatch(loadQuestionsActionCreator(splitQuestions(generatedText.text)));
+
+    dispatch(setIsLoadingActionCreator(false));
+  };
+
   return {
     checkEmailSpam,
+    generateText,
   };
 };
 
