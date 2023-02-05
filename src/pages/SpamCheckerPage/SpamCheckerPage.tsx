@@ -2,20 +2,33 @@ import { useState } from "react";
 import Button from "../../components/Button/Button";
 import ProgressBar from "../../components/ProgressBar/ProgressBar";
 import TextArea from "../../components/TextArea/TextArea";
-
-import { RiSpam2Fill } from "react-icons/ri";
+import useApi from "../../hooks/useApi/useApi";
+import { useAppSelector } from "../../redux/hooks";
+import { Bars } from "react-loader-spinner";
 
 const SpamCheckerPage = () => {
-  const [, setTextAreaValue] = useState<string>("");
+  const { checkEmailSpam } = useApi();
+  const {
+    tools: {
+      emailSpamChecker: { prediction, confidence },
+    },
+    ui: { isLoading },
+  } = useAppSelector((state) => state);
+
+  const [textAreaValue, setTextAreaValue] = useState<string>("");
 
   const handleChange = (value: string) => {
     setTextAreaValue(value);
   };
 
-  const handleCheck = () => {};
+  const handleCheck = () => {
+    if (textAreaValue.length === 0) return;
+
+    checkEmailSpam(textAreaValue);
+  };
 
   return (
-    <section className="flex flex-col gap-16">
+    <section className="flex flex-col gap-10">
       <div className="flex flex-col gap-4">
         <h2 className="text-4xl font-bold text-left text-background">
           Spam Checker
@@ -25,9 +38,22 @@ const SpamCheckerPage = () => {
 
         <Button text={"Check"} onClick={handleCheck}></Button>
       </div>
-      <div className="flex items-center gap-4">
-        <RiSpam2Fill size={42} />
-        <ProgressBar value={10} />
+
+      <div className="h-[38px]">
+        <Bars
+          height="38"
+          width="38"
+          color="#19121C"
+          ariaLabel="bars-loading"
+          wrapperClass="flex justify-center"
+          visible={isLoading}
+        />
+      </div>
+      <div className="flex flex-col gap-4">
+        <ProgressBar value={confidence * 100} />
+        <span className="self-center uppercase text-xl font-bold">
+          {prediction}
+        </span>
       </div>
     </section>
   );
