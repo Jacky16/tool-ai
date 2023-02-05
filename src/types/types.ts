@@ -3,3 +3,12 @@ export interface Tool {
   description: string;
   link: string;
 }
+
+export interface EmailClassificationDataResponse {
+  classifications: [
+    {
+      prediction: string;
+      confidence: number;
+    }
+  ];
+}
