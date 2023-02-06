@@ -1,11 +1,11 @@
 import { OptionsTextGenerator } from "../hooks/types/types";
 
 export const presetQuestionGenerator: OptionsTextGenerator = {
-  maxTokens: 300,
+  maxTokens: 200,
   model: "command-xlarge-nightly",
   temperature: 2,
-  k: 0,
-  p: 0,
+  k: 1,
+  p: 1,
   frequencyPenalty: 0,
   presencePenalty: 0,
 };
