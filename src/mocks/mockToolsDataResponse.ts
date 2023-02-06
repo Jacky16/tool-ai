@@ -13,4 +13,6 @@ export const mockCheckEmailSpamResponse: EmailClassificationDataResponse = {
 export const mockQuestions =
   "\nWhat is TypeScript?\nHow is TypeScript different from JavaScript?\nWhat are the benefits of using TypeScript?\nHow is TypeScript used in a web application?\nWhat are the basic TypeScript concepts?";
 
+export const mockAnswer = "This is a answer";
+
 export const mockQuestionsFormatted = splitQuestions(mockQuestions);

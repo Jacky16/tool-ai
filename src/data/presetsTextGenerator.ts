@@ -12,10 +12,10 @@ export const presetQuestionGenerator: OptionsTextGenerator = {
 
 export const presetAnswerGenerator: OptionsTextGenerator = {
   maxTokens: 80,
-  model: "command-xlarge-nightly",
-  temperature: 0,
-  k: 0,
-  p: 0,
-  frequencyPenalty: 0,
-  presencePenalty: 0,
+  model: "medium",
+  temperature: 0.1,
+  k: 1,
+  p: 1,
+  frequencyPenalty: 0.5,
+  presencePenalty: 0.5,
 };

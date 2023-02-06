@@ -33,7 +33,8 @@ const QuestionsPage = () => {
 
   const canFormBeSubmitted =
     formState.language !== Language.None &&
-    formState.numberOfQuestions <= maxQuestions;
+    formState.numberOfQuestions <= maxQuestions &&
+    formState.numberOfQuestions > 0;
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -100,7 +101,7 @@ const QuestionsPage = () => {
           <Button
             text={"Generate"}
             onClick={() => {}}
-            disabled={!canFormBeSubmitted}
+            disabled={!canFormBeSubmitted || isLoading}
           ></Button>
         </form>
         <small className="self-center text-black/50">

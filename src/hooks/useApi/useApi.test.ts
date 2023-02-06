@@ -1,15 +1,21 @@
 import { renderHook } from "@testing-library/react";
-import { presetQuestionGenerator } from "../../data/presetsTextGenerator";
 import {
+  presetAnswerGenerator,
+  presetQuestionGenerator,
+} from "../../data/presetsTextGenerator";
+import {
+  mockAnswer,
   mockCheckEmailSpamResponse,
   mockQuestionsFormatted,
 } from "../../mocks/mockToolsDataResponse";
 import RenderWrapper from "../../mocks/RenderWrapper";
 import { store } from "../../redux/store";
 import {
+  loadAnswerActionCreator,
   loadQuestionsActionCreator,
   loadSpamCheckerActionCreator,
 } from "../../redux/toolsSlice/toolsSlice";
+import { Question } from "../../types/types";
 import useApi from "./useApi";
 
 const dispatch = jest.spyOn(store, "dispatch");
@@ -42,7 +48,7 @@ describe("Given the checkEmailSpam function", () => {
 
 describe("Given the generateText function", () => {
   describe("When is called with a prompt 'generate a list of 5 questions about typescript", () => {
-    test("Then the dispatch should be called with the question formated", async () => {
+    test("Then the dispatch should be called with the question formatted", async () => {
       const prompt = "generate a list of 5 questions about typescript";
 
       const expectedAction = loadQuestionsActionCreator(mockQuestionsFormatted);
@@ -56,6 +62,33 @@ describe("Given the generateText function", () => {
       });
 
       await generateText(presetQuestionGenerator, prompt);
+
+      expect(dispatch).toBeCalledWith(expectedAction);
+    });
+  });
+});
+
+describe("Given the answerQuestions function", () => {
+  describe("When is called with a question 'What is typescript?'", () => {
+    test("Then the dispatch should be called with 'This is a answer'", async () => {
+      const question: Question = {
+        question: "What is typescript?",
+      };
+
+      const expectedAction = loadAnswerActionCreator({
+        ...question,
+        answer: mockAnswer,
+      });
+
+      const {
+        result: {
+          current: { answerQuestion },
+        },
+      } = renderHook(() => useApi(), {
+        wrapper: RenderWrapper,
+      });
+
+      await answerQuestion(presetAnswerGenerator, question);
 
       expect(dispatch).toBeCalledWith(expectedAction);
     });
