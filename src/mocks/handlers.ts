@@ -17,8 +17,8 @@ export const handlers = [
     );
   }),
 
-  rest.post(apiEndpoints.generate, (req, res, ctx) => {
-    const { model } = req.body as OptionsTextGenerator;
+  rest.post(apiEndpoints.generate, async (req, res, ctx) => {
+    const { model } = (await req.json()) as OptionsTextGenerator;
     if (model === "medium") {
       return res(
         ctx.status(200),
