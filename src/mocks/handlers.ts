@@ -1,5 +1,4 @@
 import { rest } from "msw";
-import { OptionsTextGenerator } from "../hooks/types/types";
 import apiEndpoints from "../routes/apiEndpoints";
 import {
   mockAnswer,
@@ -18,7 +17,7 @@ export const handlers = [
   }),
 
   rest.post(apiEndpoints.generate, async (req, res, ctx) => {
-    const { model } = (await req.json()) as OptionsTextGenerator;
+    const { model } = await req.json();
     if (model === "medium") {
       return res(
         ctx.status(200),
