@@ -22,4 +22,22 @@ describe("Given the QuestionCard component", () => {
       expect(button).toBeInTheDocument();
     });
   });
+
+  describe("When is rendered with a question with answer", () => {
+    test("Then it should show the answer but not the button 'Show answer'", () => {
+      const question: Question = {
+        question: "What is the difference between var and let?",
+        answer: "var is function scoped and let is block scoped",
+      };
+      render(<QuestionCard question={question} />);
+
+      const questionHeading = screen.getByRole("heading", {
+        name: question.question,
+      });
+      const answer = screen.getByText(question.answer as string);
+
+      expect(questionHeading).toBeInTheDocument();
+      expect(answer).toBeInTheDocument();
+    });
+  });
 });
