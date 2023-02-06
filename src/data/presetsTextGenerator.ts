@@ -1,6 +1,6 @@
 import { OptionsTextGenerator } from "../hooks/types/types";
 
-export const presetsQuestionGenerator: OptionsTextGenerator = {
+export const presetQuestionGenerator: OptionsTextGenerator = {
   maxTokens: 300,
   model: "command-xlarge-nightly",
   temperature: 2,
@@ -10,7 +10,7 @@ export const presetsQuestionGenerator: OptionsTextGenerator = {
   presencePenalty: 0,
 };
 
-export const questionGeneratorOptions: OptionsTextGenerator = {
+export const presetAnswerGenerator: OptionsTextGenerator = {
   maxTokens: 80,
   model: "command-xlarge-nightly",
   temperature: 0,

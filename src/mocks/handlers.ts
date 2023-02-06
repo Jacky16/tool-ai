@@ -2,7 +2,7 @@ import { rest } from "msw";
 import apiEndpoints from "../routes/apiEndpoints";
 import {
   mockCheckEmailSpamResponse,
-  mockQuestionsResponse,
+  mockQuestions,
 } from "./mockToolsDataResponse";
 
 export const handlers = [
@@ -19,7 +19,7 @@ export const handlers = [
     return res(
       ctx.status(200),
       ctx.json({
-        ...mockQuestionsResponse,
+        text: mockQuestions,
       })
     );
   }),

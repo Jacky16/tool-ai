@@ -64,6 +64,7 @@ const useApi = () => {
         "content-type": "application/json",
         authorization: `BEARER ${apiBearer}`,
       },
+
       body: JSON.stringify({
         prompt,
         max_tokens: preset.maxTokens,
@@ -73,14 +74,14 @@ const useApi = () => {
         p: preset.p,
         frequency_penalty: preset.frequencyPenalty,
         presence_penalty: preset.presencePenalty,
+        Truncate: "END",
+        return_likelihoods: "NONE",
       }),
     });
 
-    const data = (await response.json()) as TextGeneratorDataResponse;
+    const { text } = await response.json();
 
-    const [generatedText] = data.generations;
-
-    dispatch(loadQuestionsActionCreator(splitQuestions(generatedText.text)));
+    dispatch(loadQuestionsActionCreator(splitQuestions(text)));
 
     dispatch(setIsLoadingActionCreator(false));
   };
