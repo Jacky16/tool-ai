@@ -4,6 +4,7 @@ import Container from "./components/Container/Container";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import ToolLayout from "./layout/ToolLayout/ToolLayout";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import QuestionsPage from "./pages/QuestionsPage/QuestionsPage";
 import SpamCheckerPage from "./pages/SpamCheckerPage/SpamCheckerPage";
 
@@ -42,7 +43,7 @@ function App() {
             </ToolLayout>
           }
         />
-        <Route path="*" element={<div>404 Not Found</div>} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
 
       <Footer />
