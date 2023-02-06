@@ -1,8 +1,7 @@
 import { renderHook } from "@testing-library/react";
-import { presetsQuestionGenerator } from "../../data/presetsTextGenerator";
+import { presetQuestionGenerator } from "../../data/presetsTextGenerator";
 import {
   mockCheckEmailSpamResponse,
-  mockQuestions,
   mockQuestionsFormatted,
 } from "../../mocks/mockToolsDataResponse";
 import RenderWrapper from "../../mocks/RenderWrapper";
@@ -11,7 +10,6 @@ import {
   loadQuestionsActionCreator,
   loadSpamCheckerActionCreator,
 } from "../../redux/toolsSlice/toolsSlice";
-import splitQuestions from "../../utils/splitQuestions/splitQuestions";
 import useApi from "./useApi";
 
 const dispatch = jest.spyOn(store, "dispatch");
@@ -57,7 +55,7 @@ describe("Given the generateText function", () => {
         wrapper: RenderWrapper,
       });
 
-      await generateText(presetsQuestionGenerator, prompt);
+      await generateText(presetQuestionGenerator, prompt);
 
       expect(dispatch).toBeCalledWith(expectedAction);
     });
