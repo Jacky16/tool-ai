@@ -5,7 +5,7 @@ const splitQuestions = (questions: string): Question[] => {
     .split("\n")
     .map(
       (textQuestion): Question => ({
-        question: textQuestion,
+        question: textQuestion.replace(/\b\d+\./g, ""),
       })
     )
     .filter((question) => question.question !== "");

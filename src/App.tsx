@@ -4,6 +4,7 @@ import Container from "./components/Container/Container";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import ToolLayout from "./layout/ToolLayout/ToolLayout";
+import QuestionsPage from "./pages/QuestionsPage/QuestionsPage";
 import SpamCheckerPage from "./pages/SpamCheckerPage/SpamCheckerPage";
 
 const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
@@ -36,7 +37,7 @@ function App() {
           element={
             <ToolLayout>
               <Container>
-                <div>Language Questions</div>
+                <QuestionsPage />
               </Container>
             </ToolLayout>
           }

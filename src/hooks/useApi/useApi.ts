@@ -11,7 +11,6 @@ import splitQuestions from "../../utils/splitQuestions/splitQuestions";
 import {
   EmailClassificationDataResponse,
   OptionsTextGenerator,
-  TextGeneratorDataResponse,
 } from "../types/types";
 
 const useApi = () => {

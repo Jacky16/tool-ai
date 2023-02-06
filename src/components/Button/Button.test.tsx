@@ -25,4 +25,16 @@ describe("Given a Button component", () => {
       expect(onClick).toHaveBeenCalled();
     });
   });
+
+  describe("When it receives a disabled prop", () => {
+    test("Then it should be disabled", () => {
+      const text = "Check";
+      const disabled = true;
+
+      render(<Button text={text} onClick={() => {}} disabled={disabled} />);
+      const button = screen.getByRole("button");
+
+      expect(button).toBeDisabled();
+    });
+  });
 });
