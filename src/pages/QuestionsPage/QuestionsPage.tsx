@@ -100,7 +100,7 @@ const QuestionsPage = () => {
           <Button
             text={"Generate"}
             onClick={() => {}}
-            disabled={!canFormBeSubmitted as boolean}
+            disabled={!canFormBeSubmitted}
           ></Button>
         </form>
         <small className="self-center text-black/50">
