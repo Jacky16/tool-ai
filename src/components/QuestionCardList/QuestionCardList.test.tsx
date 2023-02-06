@@ -1,5 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { getQuestionsWithoutAnswer } from "../../mocks/factory/toolsFactory";
+import RenderWrapper from "../../mocks/RenderWrapper";
 import QuestionCardList from "./QuestionCardList";
 
 describe("Given the QuestionCardList component", () => {
@@ -8,7 +9,9 @@ describe("Given the QuestionCardList component", () => {
       const expectedQuestions = 5;
       const questions = getQuestionsWithoutAnswer(expectedQuestions);
 
-      render(<QuestionCardList questions={questions} />);
+      render(<QuestionCardList questions={questions} />, {
+        wrapper: RenderWrapper,
+      });
 
       const questionsArticles = screen.getAllByRole("article");
 
