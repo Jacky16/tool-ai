@@ -27,7 +27,7 @@ Object {
                   class="w-full flex flex-col items-center gap-2 bg-primary max-w-sm text-background p-2 border-2 border-background rounded-sm shadow-lg"
                 >
                   <h3
-                    class="font-bold text-3xl"
+                    class="font-bold text-3xl text-center"
                   >
                     Spam checker
                   </h3>
@@ -49,7 +49,7 @@ Object {
                   class="w-full flex flex-col items-center gap-2 bg-primary max-w-sm text-background p-2 border-2 border-background rounded-sm shadow-lg"
                 >
                   <h3
-                    class="font-bold text-3xl"
+                    class="font-bold text-3xl text-center"
                   >
                     Language questions
                   </h3>
@@ -95,7 +95,7 @@ Object {
                 class="w-full flex flex-col items-center gap-2 bg-primary max-w-sm text-background p-2 border-2 border-background rounded-sm shadow-lg"
               >
                 <h3
-                  class="font-bold text-3xl"
+                  class="font-bold text-3xl text-center"
                 >
                   Spam checker
                 </h3>
@@ -117,7 +117,7 @@ Object {
                 class="w-full flex flex-col items-center gap-2 bg-primary max-w-sm text-background p-2 border-2 border-background rounded-sm shadow-lg"
               >
                 <h3
-                  class="font-bold text-3xl"
+                  class="font-bold text-3xl text-center"
                 >
                   Language questions
                 </h3>
