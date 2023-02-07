@@ -1,20 +1,11 @@
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=Jacky16_tool-ai)](https://sonarcloud.io/summary/new_code?id=Jacky16_tool-ai)
 
-<div style="display: flex; gap:4px; justify-content: start;">
-
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Jacky16_tool-ai&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=Jacky16_tool-ai)
-
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Jacky16_tool-ai&metric=coverage)](https://sonarcloud.io/summary/new_code?id=Jacky16_tool-ai)
-
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=Jacky16_tool-ai&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=Jacky16_tool-ai)
-
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Jacky16_tool-ai&metric=bugs)](https://sonarcloud.io/summary/new_code?id=Jacky16_tool-ai)
-
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Jacky16_tool-ai&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=Jacky16_tool-ai)
-
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=Jacky16_tool-ai&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=Jacky16_tool-ai)
-
-</div>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d21cfa09-9241-4ce1-bd0d-3140c7f65435/deploy-status)](https://app.netlify.com/sites/tool-ai/deploys)
 
@@ -48,7 +39,7 @@ Tool AI is a web site where you can find 2 tools:
   Will check if a text is SPAM or HAM.
   <br/>
 
-  <div style="display: flex; gap:18px; justify-content: center;">
+  <div style="display: flex; justify-content: space-between; gap:8px;">
     <img
     height="800px" width="800px"
     src="./public/assets/images/spam-desktop.png" alt="Spam checker desktop" style="display: flex; justify-content: center;"/>
@@ -62,13 +53,13 @@ Tool AI is a web site where you can find 2 tools:
   Will generate questions about a programming language and if you want, you'll be able to see the answer.
   <br/>
 
-   <div style="display: flex; gap:18px; justify-content: center;">
-  <img
-  height="800px" width="800px"
-  src="./public/assets/images/questions-desktop.png" alt="Spam checker desktop" style="display: flex; justify-content: center;"/>
-  <img
-  height="500px" 
-  src="./public/assets/images/questions-mobile.png" alt="Spam checker desktop" style="display: flex; justify-content: center;"/>
+  <div style="display: flex; justify-content: space-between; gap:8px;">
+    <img
+    height="800px" width="800px"
+    src="./public/assets/images/questions-desktop.png" alt="Spam checker desktop" style="display: flex; justify-content: center;"/>
+    <img
+    height="500px" 
+    src="./public/assets/images/questions-mobile.png" alt="Spam checker desktop" style="display: flex; justify-content: center;"/>
   </div>
 
 ## Tech Stack
