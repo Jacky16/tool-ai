@@ -34,6 +34,17 @@ const SpamCheckerPage = () => {
           Spam Checker
         </h2>
         <p>Put the content of email to check if the content is Spam </p>
+        <small className="text-sm border-l-4  border-background px-2">
+          You can use this{" "}
+          <a
+            href="https://docs.google.com/spreadsheets/d/1ADxqgNqsjstuyaG0vxd3gSFkgw5eIhf56HLxfcDFWcY/edit?usp=sharing"
+            className="underline"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            examples
+          </a>
+        </small>
         <TextArea placeholder="Type body of email" onChange={handleChange} />
 
         <Button text={"Check"} onClick={handleCheck}></Button>
